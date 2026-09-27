@@ -1,0 +1,23 @@
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+sse-starlette==3.4.11
+python-dotenv==1.2.3
+pydantic==2.13.5
+
+langgraph==1.2.12
+langchain-groq==1.1.3
+langchain-core==1.6.5
+groq==0.37.1
+
+# --- Local image generation (logo concepts) ---
+# IMPORTANT: install torch SEPARATELY first, with the CUDA build matching
+# your GPU driver, BEFORE running `pip install -r requirements.txt`. See
+# README.md "Local logo generation setup" for the exact command for your
+# system. Installing torch via this requirements.txt alone risks pulling a
+# CPU-only build depending on your platform, which will make logo
+# generation fall back to (much slower) CPU inference or fail outright.
+diffusers==0.40.0
+transformers==5.17.0
+accelerate==1.15.0
+safetensors==0.8.0
+pillow==12.3.0
