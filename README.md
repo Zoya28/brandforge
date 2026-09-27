@@ -140,7 +140,6 @@ brandforge/
 │   │   ├── brand_kit_graph.py         # LangGraph wiring
 │   │   └── pipeline_nodes/            # one file per stage
 │   ├── main.py                        # FastAPI app + SSE streaming route
-│   ├── test_graph_wiring_offline.py   # offline mock test (see limitations)
 │   └── requirements.txt
 └── frontend/
     ├── app/page.tsx                   # state machine: input → interview → running → complete
