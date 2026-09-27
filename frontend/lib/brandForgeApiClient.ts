@@ -12,7 +12,7 @@ import {
 } from "./brandKitSessionTypes";
 
 const BACKEND_BASE_URL =
-  process.env.NEXT_PUBLIC_BRANDFORGE_API_BASE_URL || "http://localhost:8000";
+  process.env.BRANDFORGE_API_BASE_URL || "http://localhost:8000";
 
 export async function startBrandSession(roughIdeaText: string): Promise<StartSessionResponse> {
   const response = await fetch(`${BACKEND_BASE_URL}/api/brand-sessions`, {
