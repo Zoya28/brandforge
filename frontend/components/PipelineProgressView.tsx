@@ -327,7 +327,7 @@ export default function PipelineProgressView({
               </span>
             </div>
 
-            <div className="mt-3 h-[3px] w-full overflow-hidden bg-[#dddcd6]">
+            <div className="mt-3 h-0.75 w-full overflow-hidden bg-[#dddcd6]">
               <div
                 className="h-full bg-[#173746] transition-all duration-500"
                 style={{ width: `${progressPercentage}%` }}
@@ -342,7 +342,7 @@ export default function PipelineProgressView({
 
         {/* Content */}
         <div className="px-5 py-8 sm:px-8 lg:px-12 lg:py-12 xl:px-16">
-          <div className="mx-auto w-full max-w-[900px]">
+          <div className="mx-auto w-full max-w-225">
             {/* Intro */}
             <div className="flex items-end justify-between gap-6">
               <div>
