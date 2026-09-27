@@ -45,7 +45,8 @@ app = FastAPI(title="BrandForge Engine API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], 
+    allow_origins=["https://brandforge-hackathon.vercel.app/",], 
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
