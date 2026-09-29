@@ -12,7 +12,7 @@ import {
 } from "./brandKitSessionTypes";
 
 const BACKEND_BASE_URL =
-  process.env.BRANDFORGE_API_BASE_URL || "https://saying-morrison-compliance-hello.trycloudflare.com";
+  process.env.BRANDFORGE_API_BASE_URL || "https://researcher-classified-deployment-preservation.trycloudflare.com";
 
 export async function startBrandSession(roughIdeaText: string): Promise<StartSessionResponse> {
   const response = await fetch(`${BACKEND_BASE_URL}/api/brand-sessions`, {
